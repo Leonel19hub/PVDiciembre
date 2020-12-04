@@ -1,16 +1,20 @@
 package ar.edu.unju.edm.services;
 
-// import java.util.List;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import ar.edu.unju.edm.modelo.Habitacion;
+import ar.edu.unju.edm.model.Habitacion;
 
 @Service
 public interface IHabitacionService {
     
-    //i not sure for this
-    public void saveRoom(Habitacion room);
-    public Habitacion searchRoom();//tendria que ser con localdate
-    public Iterable<Habitacion> searchAllRooms();
+    public void guardarRoom(Habitacion room);
+    public List<Habitacion> buscarAllRooms();
+    public Habitacion conseguirRoom(Habitacion room);
+    public void guardarEncontrado(Habitacion room);
+    public Habitacion obtenerRoom(int numRoom) throws Exception;
+    public long retornarId(Habitacion room);
+    public void eliminarRoom();
+
 }

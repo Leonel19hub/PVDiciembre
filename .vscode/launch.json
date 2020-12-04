@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TpDiciembreFinalApplication<TpDiciembreFinal>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "ar.edu.unju.edm.TpDiciembreFinalApplication",
+            "projectName": "TpDiciembreFinal",
+            "args": ""
+        }
+    ]
+}

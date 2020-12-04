@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica;
+}
+
+/* -------------------------------------CSS DE CONTAINER TOP-------------------------------- */
+
+.container-top{
+    display: flex;
+    background-color: #003580;
+    justify-content: space-around;
+    height: 51px;
+    width: 100vw;
+}
+
+.logo{
+    /* background-color: black; */
+    width: 50vw;;
+}
+
+.logo img{
+    height: 38px;
+    width: 225px;
+    /* margin: 5px auto; */
+    margin-top: 8px;;
+    margin-left: 10px;
+    /* line-height: 51px; */
+}
+
+.login-register{
+    /* background-color: aqua; */
+    width: 50vw;;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-top .login-register a{
+    text-decoration: none;
+    /* background-color:red; */
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.container-top .login-register .register{
+    margin-right: 30px;
+}
+
+.container-top .login-register .login{
+    margin-right: 30px;
+}
+
+/*--------------------------------- CSS MAIN ---------------------------------*/
+
+.comentarios{
+    grid-area: sidebar;
+}
+
+.container-hotel{
+    grid-area: main;
+}
+
+.main{
+    width: 1100px;
+    height: 500px;
+    margin: 20px auto;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main main main sidebar"
+        "main main main sidebar"
+        "main main main sidebar";
+}
+
+.main .comentarios{
+
+    background-color: aqua;
+}
+
+                /* -----------TITULO DE HOTEL + UBICACION------------- */
+
+.container-title{
+    display: grid;
+    grid-template-rows: 36px 22px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1{
+    font-size: 23px;
+    color: #333333;
+    font-family: 'Francois One', sans-serif;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.reservar{
+    background-color: #003580;
+    width: 125px;
+    height: 36px;
+    text-align: center;
+    margin-right: 15px;
+    
+}
+
+.reservar a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+.reservar a:hover{
+    color: #fff;
+    text-decoration: white;
+}
+
+.ubi{
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none; 
+    margin-left: 10px;
+}
+
+                    /*----------------- FIN TITULO DE HOTEL + UBICACION----------- */
+
